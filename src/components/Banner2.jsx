@@ -10,13 +10,13 @@ const Banner2 = () => {
     >
       <div className="w-[75%]">
         <motion.p
-          className="m-2  text-5xl font-extrabold"
+          className="m-2 text-3xl font-extrabold md:text-5xl"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <div>
-            <span className="border-b-2 border-blue-500 pb-2 ">Learn</span>{" "}
+            <span className="border-blue-500 pb-2 md:border-b-2">Learn</span>{" "}
             Anything
           </div>
         </motion.p>
@@ -45,7 +45,7 @@ const Banner2 = () => {
         </button>
 
         {/* Second Button */}
-        <button className="shadow-3xl h-10 rounded-md rounded-tl-3xl px-6 font-semibold ">
+        <button className="h-10 rounded-md rounded-tl-3xl px-6 font-semibold shadow-3xl ">
           <i className="bi bi-chat-dots mr-1 font-semibold"></i>
           Talk to Us
         </button>

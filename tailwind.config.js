@@ -15,9 +15,8 @@ export default withMT({
       screens: {
         "md-max": { max: "720px" },
       },
-      fontFamily: {
-        sans: ["Montserrat", "sans-serif"],
-      },
+
+      plugins: [require("tailwind-scrollbar-hide")],
       boxShadow: {
         "3xl": "0 10px 20px rgba(0, 0, 0, 0.25)", // Example custom shadow
       },

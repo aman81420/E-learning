@@ -5,10 +5,10 @@ import assets from "../assets/assets";
 const Banner = () => {
   return (
     <div
-      className="h-screen bg-cover bg-center"
+      className=" h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${assets.bg3})` }}
     >
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center justify-center">
         {/* Animated Icon */}
         <motion.div
           className="mt-6 rounded-full bg-gradient-to-b from-orange-500 to-red-500 p-4"
@@ -21,7 +21,7 @@ const Banner = () => {
 
         {/* Animated Title */}
         <motion.p
-          className="m-2 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-5xl font-bold text-transparent"
+          className="my-2 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-3xl font-bold text-transparent md:text-5xl"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -31,7 +31,7 @@ const Banner = () => {
 
         {/* Animated Subtitle */}
         <motion.p
-          className="text-3xl font-[380]"
+          className="text-2xl font-[380] md:text-3xl"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}

@@ -21,7 +21,7 @@ const Banner3 = () => {
 
   return (
     <div
-      className="flex h-screen items-center justify-around bg-cover bg-center"
+      className="flex h-screen flex-col items-center justify-around bg-cover bg-center md:flex-row"
       style={{ backgroundImage: `url(${assets.bg5})` }}
     >
       {/* ---------------------------- Left side ---------------------------------- */}
@@ -47,12 +47,12 @@ const Banner3 = () => {
 
       {/* ---------------------------- Right side ------------------------------------ */}
       <motion.div
-        className="flex flex-col space-y-4"
+        className=" flex flex-col space-y-4 "
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
       >
-        <button className="flex h-10 w-72 items-center justify-start rounded-md rounded-tl-3xl bg-white px-6 text-sm font-semibold text-gray-800">
+        <button className="flex h-10  w-72 items-center justify-start rounded-md rounded-tl-3xl bg-white px-6 text-sm font-semibold text-gray-800">
           Keywords
         </button>
 
@@ -60,7 +60,7 @@ const Banner3 = () => {
         <div className="relative">
           <button
             onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
-            className="flex h-10 w-72 items-center justify-between rounded-md rounded-tl-3xl bg-white px-6 text-sm font-semibold text-gray-800"
+            className="flex h-10  w-72 items-center justify-between rounded-md rounded-tl-3xl bg-white px-6 text-sm font-semibold text-gray-800"
           >
             {selectedCategory}
             <i className="bi bi-caret-down-fill text-gray-800"></i>
@@ -95,7 +95,7 @@ const Banner3 = () => {
         <div className="relative">
           <button
             onClick={() => setIsInstructorOpen(!isInstructorOpen)}
-            className="flex h-10 w-72 items-center justify-between rounded-md rounded-tl-3xl bg-white px-6 text-sm font-semibold text-gray-800"
+            className="flex h-10  w-72 items-center justify-between rounded-md rounded-tl-3xl bg-white px-6 text-sm font-semibold text-gray-800"
           >
             {selectedInstructor}
             <i className="bi bi-caret-down-fill text-gray-800"></i>
@@ -126,7 +126,7 @@ const Banner3 = () => {
           )}
         </div>
 
-        <button className="flex h-10 items-center justify-start rounded-md rounded-tl-3xl bg-yellow-600 px-6 text-sm font-semibold text-gray-800">
+        <button className="flex h-10 w-72 items-center justify-start rounded-md rounded-tl-3xl bg-yellow-600 px-6 text-sm font-semibold text-gray-800">
           Search Courses
         </button>
       </motion.div>

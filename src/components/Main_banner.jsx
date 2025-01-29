@@ -34,7 +34,7 @@ const Main_banner = () => {
   return (
     <div>
       <div>{pages[currentPage]}</div> {/* Render the current page */}
-      <div className="mt-4 flex -translate-y-8 justify-center space-x-1">
+      <div className="mt-4 flex justify-center space-x-1 md:-translate-y-10">
         {/* Buttons to manually change page */}
         <button
           onClick={() => handlePageChange(0)}

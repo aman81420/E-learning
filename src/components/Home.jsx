@@ -1,13 +1,14 @@
 import React from "react";
 
 import Main_banner from "./Main_banner";
-import FeaturesPage from "./FeaturesPage";
+
+import Hero from "./Hero";
 
 const Home = () => {
   return (
     <div>
       <Main_banner />
-      <FeaturesPage />
+      <Hero />
     </div>
   );
 };
